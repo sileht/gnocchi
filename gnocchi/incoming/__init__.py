@@ -46,6 +46,7 @@ class IncomingDriver(object):
 
     @property
     def NUM_SACKS(self):
+        return 1
         if not hasattr(self, '_num_sacks'):
             try:
                 self._num_sacks = int(self._get_storage_sacks())
